@@ -1,0 +1,23 @@
+<!-- Note: Flow tests files end in -meta.xml and by default the scanner does not process these files -->
+<!-- A workaround is to edit the Config.json file where the scanner is installed and change this under targetPatterns under the PMD engine -->
+<rule name="FlowTestShouldHaveAsserts"
+      language="xml"
+      message="Flow Test should have assert"
+      class="net.sourceforge.pmd.lang.rule.XPathRule">
+   <description>
+      Flow tests should have asserts as asserts assist with determining
+      if the functionality works as intended.
+   </description>
+   <priority>1</priority>
+   <properties>
+      <property name="version" value="2.0"/>
+      <property name="xpath">
+         <value>
+<![CDATA[
+FlowTest[not(//assertions)]
+]]>
+         </value>
+      </property>
+   </properties>
+</rule>
+ 
