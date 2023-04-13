@@ -1,0 +1,20 @@
+<rule name="AvoidTestIsRunningStmts"
+      language="apex"
+      message="Avoid using Test.isRunningTest()"
+      class="net.sourceforge.pmd.lang.rule.XPathRule">
+   <description>
+      Avoid using Test.isRunningTest() in code since this results
+      in code that cannot be unit tested.
+   </description>
+   <priority>1</priority>
+   <properties>
+      <property name="version" value="3.1"/>
+      <property name="xpath">
+         <value>
+<![CDATA[
+//MethodCallExpression[lower-case(@FullMethodName) = "test.isrunningtest"]
+]]>
+         </value>
+      </property>
+   </properties>
+</rule>
