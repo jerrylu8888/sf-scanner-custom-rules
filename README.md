@@ -50,4 +50,5 @@ The rule set name and description defines the "Category" of the rules.
 Store this file in a directory that contains `category`, e.g. `rules/category/apex`
 
 The ruleset can be added to the Salesforce Code Analyzer with the command:
+
 `sfdx scanner:rule:add --language apex --path "rules/category/apex/DesignRuleset.xml"`
