@@ -4,7 +4,7 @@
            xsi:schemaLocation="http://pmd.sourceforge.net/rule-tests http://pmd.sourceforge.net/rule-tests_1_0_0.xsd">
    <test-code>
       <description>Class with one underscore in class name</description>
-      <expected-problems>0</expected-problems>
+      <expected-problems>1</expected-problems>
       <code><![CDATA[
 public class Sample_Class {
 
@@ -17,7 +17,7 @@ public class Sample_Class {
    </test-code>
    <test-code>
       <description>Class with two underscores in class name</description>
-      <expected-problems>0</expected-problems>
+      <expected-problems>1</expected-problems>
       <code><![CDATA[
 public class Sample_C_lass {
 
@@ -31,7 +31,7 @@ public class Sample_C_lass {
    </test-code>
    <test-code>
       <description>Class with two underscores together in class name</description>
-      <expected-problems>0</expected-problems>
+      <expected-problems>1</expected-problems>
       <code><![CDATA[
 public class Sample__Class {
 
@@ -45,7 +45,7 @@ public class Sample__Class {
    </test-code>
    <test-code>
       <description>Inner class with underscore in class name</description>
-      <expected-problems>0</expected-problems>
+      <expected-problems>1</expected-problems>
       <code><![CDATA[
 public class SampleClass {
 
