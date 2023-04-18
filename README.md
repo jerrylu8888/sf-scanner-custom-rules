@@ -9,6 +9,10 @@ The rules folder contains individual PMD rules for Salesforce. The test folder c
 
 Avoid using Test.isRunningTest() in code since this results in code that cannot be unit tested.
 
+### Avoid using underscore in class name
+
+Class names should not contain underscore characters.
+
 ## How to use
 
 

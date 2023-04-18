@@ -1,0 +1,19 @@
+<rule name="AvoidUnderscoreInClassName"
+      language="apex"
+      message="Avoid using underscore in class name"
+      class="net.sourceforge.pmd.lang.rule.XPathRule">
+   <description>
+Class names should not contain underscore characters.
+   </description>
+   <priority>1</priority>
+   <properties>
+      <property name="version" value="2.0"/>
+      <property name="xpath">
+         <value>
+<![CDATA[
+//UserClass[contains(@Image, '_')]
+]]>
+         </value>
+      </property>
+   </properties>
+</rule>

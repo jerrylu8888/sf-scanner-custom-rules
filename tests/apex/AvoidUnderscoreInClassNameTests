@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data xmlns="http://pmd.sourceforge.net/rule-tests"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://pmd.sourceforge.net/rule-tests http://pmd.sourceforge.net/rule-tests_1_0_0.xsd">
+   <test-code>
+      <description>Class with one underscore in class name</description>
+      <expected-problems>0</expected-problems>
+      <code><![CDATA[
+public class Sample_Class {
+
+    public void method() {
+        // Do something
+    }
+
+}
+        ]]></code>
+   </test-code>
+   <test-code>
+      <description>Class with two underscores in class name</description>
+      <expected-problems>0</expected-problems>
+      <code><![CDATA[
+public class Sample_C_lass {
+
+    public void method() {
+        
+        // Do something
+
+    }
+}
+        ]]></code>
+   </test-code>
+   <test-code>
+      <description>Class with two underscores together in class name</description>
+      <expected-problems>0</expected-problems>
+      <code><![CDATA[
+public class Sample__Class {
+
+    public void method() {
+        
+        // Do something
+
+    }
+}
+        ]]></code>
+   </test-code>
+   <test-code>
+      <description>Inner class with underscore in class name</description>
+      <expected-problems>0</expected-problems>
+      <code><![CDATA[
+public class SampleClass {
+
+    public void method() {
+        // Do something
+    }
+
+    public class My_Inner_class {
+
+    }
+}
+        ]]></code>
+   </test-code>
+   <test-code>
+      <description>Class without underscore in class name</description>
+      <expected-problems>0</expected-problems>
+      <code><![CDATA[
+public class Sample {
+
+    public void method() {
+        // Do something
+    }
+
+}
+        ]]></code>
+   </test-code>
+</test-data>
